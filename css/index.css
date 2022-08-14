@@ -8,7 +8,7 @@ nav {
   display: flex;
   margin: 50px 50px;
   align-items: center;
-  gap: 20vw;
+  justify-content: space-between;
 }
 
 .nav-items {
@@ -82,7 +82,6 @@ p.text {
   padding: 40px;
 }
 
-div.right-section {}
 
 .headphone-div {
   position: relative;
@@ -117,6 +116,8 @@ div.right-section {}
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 
 .action-btn {
@@ -159,4 +160,30 @@ h5.active-item{
 }
 .tomato-dot {
   background-color: #fe5e35;
+}
+div.intro-section img{
+  max-width: 611px;
+}
+@media(max-width:1200px)
+{
+  
+
+  .nav-items{
+    display: none;
+  }
+
+  div.intro-section{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    gap: 100px;
+    margin-bottom: 100px;
+    }
+
+  div.intro-section img{
+    
+    /* width: 100%; */
+    max-width: 611px;
+  }
 }
