@@ -56,6 +56,9 @@ div.left-section h3>img {
   height: 50px;
 }
 
+div.right-section{
+  margin-bottom: 50px;
+}
 div.left-section h1 {
   font-family: "Fredoka One";
   font-size: 80px;
