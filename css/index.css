@@ -122,7 +122,7 @@ p.text {
 
 .action-btn {
   background-color: #fe5e35;
-  width: 180px;
+  min-width: 180px;
   height: 60px;
   border-radius: 40px;
   color: #ffffff;
@@ -167,7 +167,11 @@ div.intro-section img{
 @media(max-width:1200px)
 {
   
-
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .nav-items{
     display: none;
   }
@@ -175,15 +179,70 @@ div.intro-section img{
   div.intro-section{
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
     width: 80%;
     gap: 100px;
     margin-bottom: 100px;
     }
 
+ 
+}
+
+@media(max-width:600px)
+{
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-btns {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .action-btn {
+    background-color: #fe5e35;
+    width: 180px;
+    height: 60px;
+    border-radius: 40px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+  }
+  nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+  div.left-section h1{
+    padding: 0;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 30px;
+  }
+  div.left-section h3{
+    font-size: 22px;
+    margin-left: auto;
+    text-align: center;
+    white-space: nowrap;
+  }
   div.intro-section img{
-    
-    /* width: 100%; */
-    max-width: 611px;
+    width: 400px;
+    object-fit: contain;
+  }
+
+  div.left-section,div.right-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .headphone-div {
+    position: relative;
+  }
+  
+  .headphone-div .discount {
+    position: absolute;
+    height: 135px;
+    bottom: 122px;
+    left: -151px;
   }
 }
